@@ -9,5 +9,7 @@ public:
 	double distanceToLine(Point, Point);
 	bool clockwise(Point, Point);
 	Point& operator=(const Point&);
+	const bool operator==(const Point&);
+	const bool operator!=(const Point&);
 	~Point();
 };

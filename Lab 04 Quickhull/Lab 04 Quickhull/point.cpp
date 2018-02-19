@@ -27,6 +27,15 @@ bool Point::clockwise(Point a, Point b) {
 Point& Point::operator=(const Point& _new) {
 	this->x = _new.x;
 	this->y = _new.y;
+	return *this;
+}
+
+const bool Point::operator==(const Point& right) {
+	return (this->x == right.x && this->y == right.y);
+}
+
+const bool Point::operator!=(const Point& right) {
+	return !(*this == right);
 }
 
 Point::~Point() {}
