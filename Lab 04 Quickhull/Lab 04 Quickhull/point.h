@@ -7,6 +7,7 @@ public:
 	Point(int, int);
 	double angle(Point, Point);
 	double distanceToLine(Point, Point);
-
+	bool clockwise(Point, Point);
+	Point& operator=(const Point&);
 	~Point();
 };
